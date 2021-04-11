@@ -195,14 +195,23 @@ header a { color: #fff; }
 }
 
 .header-mid {
+  width: 100%;
   padding: 11px 0;
   margin: 20px 0;
   background-color: rgba(42, 120, 193, .5);
 }
 
+.header-mid.active {
+  position: sticky;
+  left: 0;
+  top: 10px;
+}
+
 .menu { display: flex; }
 
 .menu a { padding: 0 15px; }
+
+.menu a:hover { text-decoration: underline; }
 
 .menuitem { border-left: 1px solid #fff }
 .menuitem:nth-child(1){ border: none; }
@@ -261,8 +270,8 @@ main h3 {
 }
 
 .form-control { width: 320px; }
-
 .form-control label { font-size: 15px; }
+.form-control span { color: #FF0000; }
 
 .form-control select,
 .form-control input {
