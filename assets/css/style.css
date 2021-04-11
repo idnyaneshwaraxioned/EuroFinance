@@ -141,9 +141,9 @@ header a { color: #fff; }
   float: left;
 }
 
-.hamburger:hover .bar1 { transform: rotate(45deg) translateX(7px); }
-.hamburger:hover .bar2 { display: none; }
-.hamburger:hover .bar3 { transform: rotate(-45deg) translateX(5px); }
+.hamburger.active .bar1 { transform: rotate(45deg) translateX(7px); }
+.hamburger.active .bar2 { display: none; }
+.hamburger.active .bar3 { transform: rotate(-45deg) translateX(5px); }
 
 .header-top .wrapper{
   padding: 35px 0;
@@ -351,7 +351,8 @@ footer { background: linear-gradient(to right, #1E579E,#1A3467)}
 
 footer a {color: #f9f9f9;}
 
-footer a:hover { text-decoration: underline; }
+footer a:hover { text-decoration:bar1bar3
+  underline; }
 
 footer h4,
 footer h5,
@@ -481,8 +482,10 @@ footer h5 {
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 1204px) {
 
-
+  .hamburger { 
+    display: block;
+  }
 
 }  
