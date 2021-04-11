@@ -126,8 +126,8 @@ header a { color: #fff; }
   height: 40px;
   display: none;
   position: absolute;
-  right: 5%;
-  top: 7%;
+  right: 7%;
+  top: 13%;
 }
 
 .bar1,
@@ -173,7 +173,6 @@ header a { color: #fff; }
   display: flex;
   justify-content: space-between;
   flex-basis: 32%;
-  
 }
 
 .search-control { width: 80%; }
@@ -373,6 +372,9 @@ footer span { color: #f9f9f9; }
   display: block;
 }
 
+.footer-list a:hover,
+.footer-menu a:hover { text-decoration: underline; }
+
 .footermenu h4 {
   padding: 10px 0;
   border-top: 1px solid #f9f9f9;
@@ -487,5 +489,79 @@ footer h5 {
   .hamburger { 
     display: block;
   }
+  
+  .header-mid { background: none; }
+
+  .menu.active { transform: scale(1); }
+  
+  .menu { 
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    transform: scale(0);
+    transform-origin: left;
+    transition: .4s;
+    background-color: #1DA1F2;
+  }
+
+  .menuitem { 
+    padding: 10px 0;
+    border: none;
+    display: block;
+    text-align: center;
+  }
+
+  .header-top .wrapper{ flex-direction: column; }
+
+  .searchform{ margin: 10px 0; }
+
+  header { background: url('https://dummyimage.com/1838x593/2260ac/2261ac');}
+
+  header figure { display: none; }
+
+  .header-content {
+    width: 100%;
+    padding-bottom: 120px;
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%)
+  }
+
+  .header-btm h2 {
+    margin: 16px 0 16px;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #fff;
+  }
+  
+  .header-btm p {
+    font-size: 29px;
+    color: #fff;
+  }
+
+  .footerdwn .wrapper { flex-direction: column; }
+
+  .footermenu { flex-direction: column; }
 
 }  
+
+@media only screen and (max-width: 995px){
+  .form-control {
+    width: 100%;
+  }
+
+  .footer-list { 
+    width: 100%;
+    flex-direction: column; }
+
+  .footer-list li {
+    padding: 10px 0;
+    border: none;
+    text-align: left;
+  }
+
+}
