@@ -119,7 +119,7 @@ header {
   transform: translateX(-50%)
 }
 
-header a { color: #fff; }
+header a { color: #f5f5f5; }
 
 .hamburger { 
   width: 40px;
@@ -127,7 +127,7 @@ header a { color: #fff; }
   display: none;
   position: absolute;
   right: 7%;
-  top: 13%;
+  top: 4%;
 }
 
 .bar1,
@@ -164,8 +164,8 @@ header a { color: #fff; }
   width: 15px;
   height: 15px;
   position: absolute;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-top: 3px solid #3fbff3;
+  border-right: 3px solid #3fbff3;
   border-radius: 2px;
 }
 
@@ -212,7 +212,7 @@ header a { color: #fff; }
 
 .menu a:hover { text-decoration: underline; }
 
-.menuitem { border-left: 1px solid #fff }
+.menuitem { border-left: 1px solid #3fbff3 }
 .menuitem:nth-child(1){ border: none; }
 
 
@@ -220,12 +220,12 @@ header a { color: #fff; }
   margin: 134px 0 16px;
   font-size: 40px;
   letter-spacing: -1px;
-  color: #fff;
+  color: #f5f5f5;
 }
 
 .header-btm p {
   font-size: 29px;
-  color: #fff;
+  color: #3fbff3;
 }
 
 /*=================================
@@ -346,16 +346,16 @@ main h3 {
 /*=================================
   footer styling starts here
 =================================*/ 
-footer { background: linear-gradient(to right, #1E579E,#1A3467)}
+footer { background: linear-gradient(to right, #215DA5,#1b366b)}
 
-footer a {color: #f9f9f9;}
+footer a {color: #e3e1e1;}
 
 footer a:hover { text-decoration:bar1bar3
   underline; }
 
 footer h4,
 footer h5,
-footer span { color: #f9f9f9; } 
+footer span { color: #e3e1e1; } 
 
 .footermenu {
   width: 100%;
@@ -365,7 +365,7 @@ footer span { color: #f9f9f9; }
   flex-wrap: wrap;
 }
 
-.footermenu li { flex-basis: 27%; }
+.footermenu li { flex-basis: 33%; }
 
 .footer-menu li {
   padding: 2px 0;
@@ -377,8 +377,17 @@ footer span { color: #f9f9f9; }
 
 .footermenu h4 {
   padding: 10px 0;
-  border-top: 1px solid #f9f9f9;
   margin-top: 10px;
+  position: relative;
+}
+
+.footermenu h4::before {
+  content: '';
+  width: 80%;
+  height: 2px;
+  background-color: #166fa9;
+  position: absolute;
+  top: 0;
 }
 
 .footermenu h4 span { font-weight: bold; }
@@ -441,11 +450,11 @@ footer h5 {
 
 .footerdwn {
   width: 100%;
-  background-color: #0F2B57;
+  background-color: rgba(15, 43, 87, 0.5);;
 }
 
 .footerdwn .wrapper {
-  padding: 10px 0; 
+  padding: 15px 0; 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -500,6 +509,7 @@ footer h5 {
     display: block;
     position: absolute;
     left: 0;
+    top: 30px;
     z-index: 2;
     transform: scale(0);
     transform-origin: left;
@@ -556,10 +566,11 @@ footer h5 {
 
   .footer-list { 
     width: 100%;
+    padding: 10px 0;
     flex-direction: column; }
 
   .footer-list li {
-    padding: 10px 0;
+    padding: 5px 0;
     border: none;
     text-align: left;
   }
